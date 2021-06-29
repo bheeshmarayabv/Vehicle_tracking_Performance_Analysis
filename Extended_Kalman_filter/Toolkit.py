@@ -1,3 +1,7 @@
+"""
+@author: bheeshma
+"""
+
 import numpy as np
 from math import sin, cos, sqrt
 

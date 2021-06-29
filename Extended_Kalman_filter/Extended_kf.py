@@ -1,3 +1,6 @@
+"""
+@author: bheeshma
+"""
 from kalmanfilter import KalmanFilter
 from DataSample import DataSample 
 from Toolkit import calculate_jacobian, cartesian_to_polar
@@ -54,7 +57,7 @@ class Extended_KF:
     
     
     self.kalmanFilter.setQ(Q)
-    #print(Q)
+  
     
   def update(self, data):
     dt=1

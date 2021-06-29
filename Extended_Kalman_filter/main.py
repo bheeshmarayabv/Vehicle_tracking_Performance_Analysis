@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Fri Jun  4 07:49:29 2021
-
-@author: bhees
+@author: bheeshma
 """
 
 from kalmanfilter import KalmanFilter
@@ -23,8 +21,8 @@ def parse_data(file_path):
   count = 0
   
   
-  i=38
-  
+  i=249
+# based on i value you get the a differnt track estimation for i=0 you get the first track estimation in the testing_data.txt file
   with open(file_path) as f:
       
     for line in f:
@@ -239,7 +237,7 @@ d = {
 EKF1 = Extended_KF(d)
 
 
-filename = "test_n_ml_next1L.txt"
+filename = "testing_data.txt"
 
 
 all_sensor_data, all_ground_truths = parse_data("data/"+filename)
